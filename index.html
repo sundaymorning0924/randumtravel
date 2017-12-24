@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ここにホームページのタイトルを入れてください</title>
+  <link rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="body" style="width:300px; margin: 0 auto">
+  <p style="letter-spacing: 2px; text-align: center;">旅に出よう。</p>
+  <p>僕たちが作りたいのは</p>
+  <p>持っているだけで旅に出たくなるモノ。</p>
+  <p>持っているだけでワクワクするモノ。</p>
+  <p></p>
+  <p>それは新しい時代の”パスポート”</p>
+  <p>僕たちが作るものは、</p>
+  <p>そんな、存在でありたい。</p>
+  <form  style="text-align: center;">
+    <input type="button" value="あなたにオススメの旅行先" onClick="omikuji()">
+  </form>
+</div>
+<div id="footer">
+  <ul>
+    <li>TOP</li>
+    <li>PRODUCT</li>
+    <li>ABOUT</li>
+    <li>NEWS</li>
+    <li>CONTACT</li>
+  </ul>
+</div>
+<style>
+  #body {
+    color: #333;
+  }
+  #footer {
+    margin-top: 40px;
+    clear:both;
+    height:50px;
+    text-align:center;
+    font-size:0.85em;
+    background-image:url(img/footer.gif);
+    background-repeat:no-repeat;
+    padding-top:30px;
+    display:block;
+    background: #939899;
+    color: #fff;
+  }
+  li {
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+  }
+</style>
+<script type="text/javascript">
+  function omikuji() {
+    rand = Math.floor(Math.random()*100);
+    msg = "アメリカ"; //0～9（10%）
+    if (rand > 9) msg = "イギリス"; //10～29（20%）
+    if (rand > 29) msg = "フィンランド"; //30～69（40%）
+    if (rand > 69) msg = "家で待機"; //70～89（20%）
+    if (rand > 89) msg = "ドイツ"; //90～99（10%）
+    alert(msg);
+  }
+</script>
+</body>
